@@ -22,17 +22,28 @@ class MyApp extends StatelessWidget {
       ),
 //      home: MyHomePage(title: 'asdfasd'),
       home: Scaffold(
+        appBar:new AppBar(
+            title:new Text('bala Widget')
+        ),
         body: Center(
-          child: Text(
-            'Hello JSPang=======\n====\n====a\nb==================================',
-            textAlign: TextAlign.left,
-            maxLines: 3,
-            overflow: TextOverflow.fade,//从上往下变灰
-            style: TextStyle(
-              fontSize:25.0,
-              color:Color.fromARGB(255, 255, 150, 150),
-              decoration:TextDecoration.underline,
-              decorationStyle:TextDecorationStyle.solid,//下划线样式
+          child: Container(
+            child: new Image.network(
+              'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1570616101962&di=e83caef00d50db36e735a02dbad68721&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201706%2F10%2F20170610191817_yduV8.jpeg',
+              scale: 1.0,
+              width:300.0,
+              height:200.0,
+              fit: BoxFit.scaleDown,
+              color: Colors.red,
+              colorBlendMode: BlendMode.darken,
+              repeat: ImageRepeat.repeat,
+            ),
+            decoration: new BoxDecoration(
+                gradient: const LinearGradient(colors: [
+                  Colors.lightBlue,
+                  Colors.greenAccent,
+                  Colors.purple
+                ]),
+                border:Border.all(width:2.0,color:Colors.red)
             ),
           ),
         ),
