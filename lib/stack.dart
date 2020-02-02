@@ -17,7 +17,12 @@ class MyApp extends StatelessWidget {
         new Container(
           decoration: new BoxDecoration(color: Colors.lightBlue),
           padding: EdgeInsets.all(5),
-          child: new Text('iiiiiiiiiaaaa'),
+          child: new Text('张傻子'),
+        ),
+        new Positioned(
+          top: 10.9,
+          left: 11.9,
+          child: new Text('张大爷'),
         )
       ],
     );
